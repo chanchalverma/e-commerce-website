@@ -1,0 +1,171 @@
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+#navbar a.active{
+    color: white;
+    background-color: #5cb85c;
+}
+
+/* Navigation links */
+#navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav anchor */
+.subnav .subnavA {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+#navbar a:hover, .subnav:hover .subnavA {
+  background-color: red;
+ 
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;  /*hides entire elements*/
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+   z-index: 1;   /*speicfy order of element which is front and behind if -1 then behind the fonts works only in position:reletive,absolute ,fixed */
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: darkgray;
+  color: black;  
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+/* for below the navigation bar bt not work properly with link bootstap.min.css --margin-top: 48px;*/
+
+
+}
+.sticky{
+    position: fixed;
+   top:0;
+   width:100%;
+}
+
+.site-padding{
+   padding: 70px 0;
+    padding-top: 70px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+    padding-left: 0px;
+    background-color: black;
+    color: white;
+}
+
+.Cont_footer{
+  margin-right: 0px;
+}
+
+
+
+
+
+
+.logo{
+    
+    width:250px;
+    height: 60px;
+ 
+}
+/*  Slider starts*/
+@-webkit-keyframes sliderA{
+      /*  0%{
+           
+            left:0%;
+        }
+       
+        25%{
+             left:0%;
+        }
+       
+        50%{
+           left:100%;
+          
+        }
+       100%{
+            left:100%;
+        } */
+        from{opacity: 0;}
+     to{opacity: 1;}
+    }
+/*.sliderDiv{
+    width: 60%;
+        height: 400px;
+        position: relative;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+
+        background-size: 100% 100%;
+        box-shadow: 1px 2px 10px 5px gray;
+       -webkit-animation: sliderA 9s infinite;
+}
+*/
+.slider{
+    overflow: hidden;
+   
+    width: 100%;
+        height: 400px;
+      
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+   
+}
+.slider figure img{
+    width: 100%;
+    float: left;
+  box-shadow: 1px 2px 10px 5px gray;
+        border: 3px solid black;
+}
+.slider figure{
+    position: relative;
+    width:100%;
+  
+   -webkit-animation: sliderA 15s infinite;
+}
+/* slider end*/
+
+/*  sample img*/
+.sampleimg{
+    width: 100%;
+    height: 120%;
+    border: 2px solid grey;
+}
